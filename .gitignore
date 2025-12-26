@@ -1,0 +1,39 @@
+# ===============================
+# Arduino / Embedded Projects
+# ===============================
+
+# Arduino build files
+*.hex
+*.elf
+
+# Arduino IDE cache
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Temporary files
+*.bak
+*.swp
+*~
+
+# Python (if added later)
+__pycache__/
+*.pyc
+
+# Node (if added later)
+node_modules/
+
+# Ignore local environment configs
+.env
