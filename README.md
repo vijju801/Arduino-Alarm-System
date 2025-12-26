@@ -83,18 +83,19 @@ flowchart TD
     B --> C[Trigger Ultrasonic Sensor]
     C --> D[Measure Echo Time]
     D --> E[Calculate Distance]
-    E --> F{Distance < Threshold?}
+    E --> F{Distance less than Threshold}
 
     F -- Yes --> G[Turn ON Red LED]
     G --> H[Activate Buzzer]
-    H --> I[Display "Intruder Alert" on LCD]
+    H --> I[Display Intruder Alert on LCD]
     I --> J[Delay]
     J --> C
 
     F -- No --> K[Turn ON Green LED]
     K --> L[Turn OFF Buzzer]
-    L --> M[Display "Safe / No Intruder" on LCD]
+    L --> M[Display Safe or No Intruder on LCD]
     M --> J
+
 ```
 
 <h2 id="-key-insights">🔍 Key Insights</h2>
@@ -144,3 +145,4 @@ The system successfully detects intruders within the defined distance threshold
 <p align="center">
 <b>Developed for educational and embedded systems learning purposes.</b>
 </p>
+
